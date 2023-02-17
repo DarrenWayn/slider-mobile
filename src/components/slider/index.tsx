@@ -41,18 +41,13 @@ const dummyData = [
 
 const Slider: React.FC = () => {
   return (
-    <div className="stories">
-      <div className="@container">
-        <div className="flex gap-2 p-2">
-          {dummyData?.map((data: any) => (
-            <div
-              className="border p-2 border-red-600 rounded-full"
-              key={data.id}
-            >
-              {data.pp}
-            </div>
-          ))}
-        </div>
+    <div className="@container">
+      <div className="flex gap-2 p-2">
+        {dummyData?.map((data: any) => (
+          <div className="border p-2 border-red-600 rounded-full" key={data.id}>
+            {data.pp}
+          </div>
+        ))}
       </div>
     </div>
   );
